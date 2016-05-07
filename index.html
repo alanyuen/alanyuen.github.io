@@ -17,22 +17,31 @@
 
     <section class="main-content">
       <h2>
-<a id="準備" class="anchor" href="#%E6%BA%96%E5%82%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>準備</h2>
+<a id="安裝-vagrant" class="anchor" href="#%E5%AE%89%E8%A3%9D-vagrant" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安裝 Vagrant</h2>
 
 <ul>
-<li>下載安裝Vagrant, 安裝完後需要先重啟WINDOW</li>
+<li>安裝完後需要先重啟WINDOW</li>
+</ul>
+
+<h2>
+<a id="安裝-centos" class="anchor" href="#%E5%AE%89%E8%A3%9D-centos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>安裝 CentOS</h2>
+
+<ul>
+<li>以管理員身份運行Console</li>
 <li><code>mkdir demo</code></li>
 <li><code>cddemo</code></li>
 <li><code>vagrant init</code></li>
 <li><code>vagrant box add pyranja/centos-6</code></li>
-<li><code>vagrant up --provider hyperv</code></li>
-</ul>
+<li>
+<p><code>vagrant up --provider hyperv</code></p>
 
-<h2>
-<a id="問題" class="anchor" href="#%E5%95%8F%E9%A1%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>問題</h2>
+<h3>
+<a id="問題" class="anchor" href="#%E5%95%8F%E9%A1%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>問題</h3>
 
 <p><em>如果遇到mount folder失敗情況, 可賞試修改vagrantfile, 設置</em>
 <em>config.vm.synced_folder ".", "/vagrant", type: "smb", mount_options: ["username=YOUR_USERNAME","password=YOUR_PASSWORD"]</em></p>
+</li>
+</ul>
 
       <footer class="site-footer">
 
