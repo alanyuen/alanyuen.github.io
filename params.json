@@ -1,6 +1,6 @@
 {
   "name": "Vagrant + HyperV + CentOS 開發環境設置",
   "tagline": "Vagrant CentOS 安裝",
-  "body": "## 安裝 Vagrant\r\n* 安裝完後需要先重啟WINDOW\r\n\r\n## 安裝 CentOS\r\n* 以管理員身份運行Console\r\n* `mkdir demo`\r\n* `cddemo`\r\n* `vagrant init`\r\n* `vagrant box add pyranja/centos-6`\r\n* `vagrant up --provider hyperv`\r\n\r\n    ### 問題\r\n    _如果遇到mount folder失敗情況, 可賞試修改vagrantfile, 設置_\r\n    _config.vm.synced_folder \".\", \"/vagrant\", type: \"smb\", mount_options: [\"username=YOUR_USERNAME\",\"password=YOUR_PASSWORD\"]_\r\n\r\n## 連接 CentOS\r\n* 下載PUTTY, PUTTY連接IP(vagrant up時顯示)\r\n* 用賬號/密碼vagrant登入\r\n* 用PUTTY連接, 用賬號/密碼vagrant登入\r\n\r\n## 更新 CentOS\r\n* sudo su (轉成Root身份)\r\n* yum update -y\r\n\r\n## 安裝 Docker\r\n* 用賬號/密碼vagrant登入\r\n* 用PUTTY連接, 用賬號/密碼vagrant登入\r\n",
+  "body": "## 安裝 Vagrant\r\n* 安裝完後需要先重啟WINDOW\r\n\r\n## 安裝 CentOS\r\n* 以管理員身份運行Console\r\n* `mkdir demo`\r\n* `cddemo`\r\n* `vagrant init`\r\n* `vagrant box add pyranja/centos-6`\r\n* `vagrant up --provider hyperv`\r\n\r\n    ### 問題\r\n    _如果遇到mount folder失敗情況, 可賞試修改vagrantfile, 設置_\r\n    _config.vm.synced_folder \".\", \"/vagrant\", type: \"smb\", mount_options: [\"username=YOUR_USERNAME\",\"password=YOUR_PASSWORD\"]\r\n_再遇到提示輸入Uername/Password直接Enter跳過_\r\n_\r\n\r\n## 連接 CentOS\r\n* 下載PUTTY, PUTTY連接IP(vagrant up時顯示)\r\n* 用賬號/密碼vagrant登入\r\n* 用PUTTY連接, 用賬號/密碼vagrant登入\r\n\r\n## 更新 CentOS\r\n* sudo su (轉成Root身份)\r\n* yum update -y\r\n\r\n## 安裝 Docker\r\n* 用賬號/密碼vagrant登入\r\n* 用PUTTY連接, 用賬號/密碼vagrant登入\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
